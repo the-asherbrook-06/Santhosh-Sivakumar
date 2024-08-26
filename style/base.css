@@ -122,9 +122,9 @@
         font-size: 15vh;
         margin-top: 20px;
         color: transparent;
-        background-size: 300%;
+        background-size: 1000%;
         background-clip: text;
         transition: all 1s ease;
-        background-image: linear-gradient(to bottom right, black, black, black, black, yellow, yellow, orange, orange, red);
+        background-image: linear-gradient(to bottom right, #000000, #000000, #000000, #000000, #ffff00, #ffff00, #ffa500, #ff4500, #ff2600, #ff0000);
     }
 }
