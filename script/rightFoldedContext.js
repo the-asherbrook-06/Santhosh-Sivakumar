@@ -5,15 +5,16 @@ isCollapsed = true;
 
 function toggleCollapse() {
     if(!isCollapsed) {
-        rightFoldedContext.style.height = '0';
-        rightFoldedContext.style.padding = '0';
-        isCollapsed = !isCollapsed;
+        rightCollapsed.innerHTML = "menu";
+        rightFoldedContext.style.height = "0";
+        rightFoldedContext.style.padding = "0";
     }
     else {
-        rightFoldedContext.style.height = '30vh';
-        rightFoldedContext.style.padding = '1vh 1vw';
-        isCollapsed = !isCollapsed;
+        rightCollapsed.innerHTML = "menu_open";
+        rightFoldedContext.style.height = "90vh";
+        rightFoldedContext.style.padding = "1vh 1vw";
     }
+    isCollapsed = !isCollapsed;
 }
 
 rightCollapsed.addEventListener("click", toggleCollapse);
